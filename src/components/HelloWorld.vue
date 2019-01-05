@@ -15,35 +15,26 @@
 </template>
 
 <script>
+
+// build 조건에 따라 다른 모듈을 가져와 mixin
+const HelloWorldData = (() => {
+  let result = "";
+  switch(process.env.VUE_APP_MODE) {
+    case "PROJECT2": {
+      result = require("./data/HelloWorld.Project2");
+      break;
+    }
+    default: {
+      result = require("./data/HelloWorld.Default");
+      break;
+    }
+  }
+  return result;
+})().default;
+
 export default {
   name: "HelloWorld",
-  data() {
-    return {
-      list: [
-        {
-          text: "item1",
-          innerList: [
-            { text: "1-1 Apple1" },
-            { text: "1-2 Apple2" },
-            { text: "1-3 Apple3" },
-            { text: "1-4 Apple4" }
-          ]
-        },
-        {
-          text: "item2"
-        },
-        {
-          text: "item3",
-          innerList: [
-            { text: "3-1 Banana1" },
-            { text: "3-2 Banana2" },
-            { text: "3-3 Banana3" },
-            { text: "3-4 Banana4" }
-          ]
-        }
-      ]
-    };
-  },
+  mixins: [ HelloWorldData ],
   props: {
     msg: String
   }
