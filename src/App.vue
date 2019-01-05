@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld :msg="msg" />
   </div>
 </template>
 
@@ -10,6 +9,11 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
   name: "app",
+  data() {
+    return {
+      msg: process.env.VUE_APP_MODE
+    };
+  },
   components: {
     HelloWorld
   }
