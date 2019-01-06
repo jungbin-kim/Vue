@@ -15,28 +15,11 @@
 </template>
 
 <script>
-
-// build 조건에 따라 다른 모듈을 가져와 mixin
-const HelloWorldData = (() => {
-  let result = "";
-  switch(process.env.VUE_APP_MODE) {
-    case "PROJECT2": {
-      result = require("./data/HelloWorld.Project2.vue");
-      break;
-    }
-    default: {
-      result = require("./data/HelloWorld.Default.vue");
-      break;
-    }
-  }
-  return result;
-})().default;
-
 export default {
-  name: "HelloWorld",
-  mixins: [ HelloWorldData ],
+  name: "HelloWorld2",
   props: {
-    msg: String
+    msg: String,
+    list: Array
   }
 };
 </script>
