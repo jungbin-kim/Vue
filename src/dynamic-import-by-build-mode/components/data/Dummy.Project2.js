@@ -1,7 +1,7 @@
 export default {
   list: [
     {
-      text: "item1",
+      text: "Dummy.Project2.js item1",
       innerList: [
         { text: "1-1 Apple1" },
         { text: "1-3 Apple3" },
@@ -9,7 +9,7 @@ export default {
       ]
     },
     {
-      text: "item2 - Project2 Sepcial",
+      text: "Dummy.Project2.js item2",
       innerList: [
         { text: "2-1 Apple Mango1" },
         { text: "2-2 Apple Mango2" },
@@ -17,7 +17,7 @@ export default {
       ]
     },
     {
-      text: "item3",
+      text: "Dummy.Project2.js item3",
       innerList: [{ text: "3-2 Banana2" }, { text: "3-4 Banana4" }]
     },
     {

@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "serve-project2": "vue-cli-service serve --mode PROJECT2",
-    "serve-mixin-extends": "vue-cli-service serve src/main.mixin-extends",
-    "build": "vue-cli-service build",
+    "serve-dynamic-import-by-build-mode": "vue-cli-service serve src/dynamic-import-by-build-mode/main",
+    "serve-dynamic-import-by-build-mode:Project2": "vue-cli-service serve src/dynamic-import-by-build-mode/main --mode PROJECT2",
+    "serve-mixin-vs-extends": "vue-cli-service serve src/mixin-vs-extends/main",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
