@@ -4,3 +4,6 @@
   - 빌드조건2: `npm run serve-dynamic-import-by-build-mode:Project2`
 - Vue Mixin vs Extends & LifeCycle
   - `npm run serve-mixin-vs-extends`
+- Use multiple root node on Vue
+  - Using [vue-fragment](https://github.com/y-nk/vue-fragment#readme)
+  - `npm run serve-multiple-root-node`

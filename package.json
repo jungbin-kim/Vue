@@ -6,10 +6,12 @@
     "serve-dynamic-import-by-build-mode": "vue-cli-service serve src/dynamic-import-by-build-mode/main",
     "serve-dynamic-import-by-build-mode:Project2": "vue-cli-service serve src/dynamic-import-by-build-mode/main --mode PROJECT2",
     "serve-mixin-vs-extends": "vue-cli-service serve src/mixin-vs-extends/main",
+    "serve-multiple-root-node": "vue-cli-service serve src/multiple-root-node/main",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "^2.5.21"
+    "vue": "^2.5.21",
+    "vue-fragment": "^1.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",
