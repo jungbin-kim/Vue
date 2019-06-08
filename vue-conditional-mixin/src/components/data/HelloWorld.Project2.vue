@@ -21,10 +21,7 @@ export default {
         },
         {
           text: "item3",
-          innerList: [
-            { text: "3-2 Banana2" },
-            { text: "3-4 Banana4" }
-          ]
+          innerList: [{ text: "3-2 Banana2" }, { text: "3-4 Banana4" }]
         },
         {
           text: "item4 for Project2"

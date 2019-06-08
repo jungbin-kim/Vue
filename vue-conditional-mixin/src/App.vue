@@ -14,7 +14,7 @@ import HelloWorld2 from "./components/HelloWorld2.vue"; // #2
 // #2 build 조건에 따라 다른 데이터 모듈을 임포트 (json format도 가능)
 const HelloWorldListData = (() => {
   let result = "";
-  switch(process.env.VUE_APP_MODE) {
+  switch (process.env.VUE_APP_MODE) {
     case "PROJECT2": {
       result = require("./components/data/HelloWorld.Project2.js");
       break;

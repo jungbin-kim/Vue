@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "serve-project2": "vue-cli-service serve --mode PROJECT2",
+    "serve-mixin-extends": "vue-cli-service serve src/main.mixin-extends",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
