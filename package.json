@@ -8,6 +8,7 @@
     "serve-mixin-vs-extends": "vue-cli-service serve src/mixin-vs-extends/main",
     "serve-multiple-root-node": "vue-cli-service serve src/multiple-root-node/main",
     "serve-seo": "vue-cli-service serve src/seo/main",
+    "serve-vue-router-hash-changed": "vue-cli-service serve src/vue-router-hash-changed/main",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
